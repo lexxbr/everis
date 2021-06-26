@@ -1,0 +1,36 @@
+${TRACKING}  Set Variable  ${RESPONSE.json()['value'][0]['U_Tracking']}
+${STATUS_FECHADO}  Set Variable    ${RESPONSE.json()['value'][0]['U_Status'][2]}
+${STATUS_FECHADO}  Get From List   ${RESPONSE.json()['value'][0]['U_Status']}  2
+
+{
+    "odata.metadata" : "https://proxys.ddns.net:50000/b1s/v1/$metadata#U_BCE_TRCK",
+    "value" : [
+       {
+          "Code" : "4314f5f4-44d4-459d-bf08-0c131c9e032d",
+          "Name" : "4314f5f4-44d4-459d-bf08-0c131c9e032d",
+          "U_Tracking" : "OM668816442BR",
+          "U_OrderEntry" : 1521420,
+          "U_InvoiceEntry" : -1,
+          "U_Status" : [
+              "EM USO",
+              "ATRASADO",
+              "FECHADO"
+          ],
+          "U_TrackingRangeCode" : "9bf1f9dc-820a-4a62-a846-67d6dd3d326b",
+          "U_PackageCode" : null,
+          "U_DispatchDate" : null,
+          "U_DispatchHour" : null,
+          "U_PLPCode" : null,
+          "U_PLP" : null,
+          "U_ExtNF" : null,
+          "U_ShippingTypeCode" : 3,
+          "U_Operation" : "Primeiro envio",
+          "U_PromiseDate" : null,
+          "U_SideNote" : null,
+          "U_Observations" : null,
+          "U_ShipmentID" : null,
+          "U_ZPL" : null,
+          "U_ProviderPackage" : null
+       }
+    ]
+ }

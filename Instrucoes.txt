@@ -1,0 +1,15 @@
+Requer a linguagem de programação:
+ - Python 3.9.2 ou superior
+
+Automation Testing Framework:
+ - Selenium WebDriver
+
+Webdrivers for Selenium:
+ - chromedriver (Chrome) == Version 90.0.4430.72 (Official Build) (64-bit)
+
+Instructios:
+ 1 - Instale Python;
+ 2 - Baixe o WebDriver para Chrome (https://github.com/);
+ 3 - Execute no terminal o comando: "pip install requests", "pip install robotframework-extendedrequestslibrary";
+ 4 - Executar teste everis-automation-web no terminal "robot -d .\results tests\compraspagehome_tc.robot" da pasta everis-automation-web;
+ 5 - Executar teste everis-automation-api na automação clicar em RUN (Run Tests/Tasks Suite);

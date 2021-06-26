@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.2 on win32)" generated="20210626 13:51:24.984" rpa="false" schemaversion="2">
+<suite id="s1" name="TestCasesAPI" source="c:\AUTOMACAO\everis\everis-automation-api\api_testing\TestCasesAPI.robot">
+<kw name="Conecta na API" library="resource" type="SETUP">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>alias=httpbin</arg>
+<arg>url=${BASE_URL}</arg>
+<arg>disable_warnings=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20210626 13:51:25.158" level="INFO">Creating Session using : alias=httpbin, url=https://httpbin.org/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20210626 13:51:25.156" endtime="20210626 13:51:25.158"/>
+</kw>
+<status status="PASS" starttime="20210626 13:51:25.156" endtime="20210626 13:51:25.158"/>
+</kw>
+<test id="s1-t1" name="TC-02: validar atributo da url endepoint (GET https://httpbin.org/get)">
+<kw name="Conecta na API" library="resource">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>alias=httpbin</arg>
+<arg>url=${BASE_URL}</arg>
+<arg>disable_warnings=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20210626 13:51:25.160" level="INFO">Creating Session using : alias=httpbin, url=https://httpbin.org/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20210626 13:51:25.160" endtime="20210626 13:51:25.160"/>
+</kw>
+<status status="PASS" starttime="20210626 13:51:25.159" endtime="20210626 13:51:25.160"/>
+</kw>
+<kw name="Requisitar campo url da api" library="resource">
+<kw name="Get On Session" library="RequestsLibrary">
+<var>${RESPONSE}</var>
+<arg>alias=httpbin</arg>
+<arg>url=/get</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20210626 13:51:25.971" level="INFO">GET Request : url=https://httpbin.org/get 
+ path_url=/get 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20210626 13:51:25.971" level="INFO">GET Response : url=https://httpbin.org/get 
+ status=200, reason=OK 
+ headers={'Date': 'Sat, 26 Jun 2021 16:51:25 GMT', 'Content-Type': 'application/json', 'Content-Length': '308', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true'} 
+ body={
+  "args": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.25.1", 
+    "X-Amzn-Trace-Id": "Root=1-60d75b0d-33897e3e3930ec7f075ecbfe"
+  }, 
+  "origin": "179.221.197.70", 
+  "url": "https://httpbin.org/get"
+}
+ 
+ </msg>
+<msg timestamp="20210626 13:51:25.971" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20210626 13:51:25.160" endtime="20210626 13:51:25.971"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPONSE.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210626 13:51:25.971" level="INFO">{
+  "args": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.25.1", 
+    "X-Amzn-Trace-Id": "Root=1-60d75b0d-33897e3e3930ec7f075ecbfe"
+  }, 
+  "origin": "179.221.197.70", 
+  "url": "https://httpbin.org/get"
+}
+</msg>
+<status status="PASS" starttime="20210626 13:51:25.971" endtime="20210626 13:51:25.971"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{RESPONSE.json()}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20210626 13:51:25.971" level="INFO">args</msg>
+<msg timestamp="20210626 13:51:25.987" level="INFO">headers</msg>
+<msg timestamp="20210626 13:51:25.987" level="INFO">origin</msg>
+<msg timestamp="20210626 13:51:25.987" level="INFO">url</msg>
+<status status="PASS" starttime="20210626 13:51:25.971" endtime="20210626 13:51:25.987"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>a url é: ${RESPONSE.json()['url']}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210626 13:51:25.987" level="INFO">a url é: https://httpbin.org/get</msg>
+<status status="PASS" starttime="20210626 13:51:25.987" endtime="20210626 13:51:25.987"/>
+</kw>
+<status status="PASS" starttime="20210626 13:51:25.160" endtime="20210626 13:51:25.987"/>
+</kw>
+<kw name="Conferir se retorna no campo url é &quot;https://httpbin.org/get&quot;" library="resource" sourcename="Conferir se retorna no campo url é &quot;${RESPONSE.json()['url']}&quot;">
+<kw name="Get On Session" library="RequestsLibrary">
+<var>${RESPONSE}</var>
+<arg>alias=httpbin</arg>
+<arg>url=/get</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20210626 13:51:26.159" level="INFO">GET Request : url=https://httpbin.org/get 
+ path_url=/get 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20210626 13:51:26.159" level="INFO">GET Response : url=https://httpbin.org/get 
+ status=200, reason=OK 
+ headers={'Date': 'Sat, 26 Jun 2021 16:51:25 GMT', 'Content-Type': 'application/json', 'Content-Length': '308', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true'} 
+ body={
+  "args": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.25.1", 
+    "X-Amzn-Trace-Id": "Root=1-60d75b0d-617567f405a954090605aa66"
+  }, 
+  "origin": "179.221.197.70", 
+  "url": "https://httpbin.org/get"
+}
+ 
+ </msg>
+<msg timestamp="20210626 13:51:26.159" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20210626 13:51:25.987" endtime="20210626 13:51:26.159"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RESPONSE.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210626 13:51:26.159" level="INFO">{
+  "args": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.25.1", 
+    "X-Amzn-Trace-Id": "Root=1-60d75b0d-617567f405a954090605aa66"
+  }, 
+  "origin": "179.221.197.70", 
+  "url": "https://httpbin.org/get"
+}
+</msg>
+<status status="PASS" starttime="20210626 13:51:26.159" endtime="20210626 13:51:26.159"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{RESPONSE.json()}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20210626 13:51:26.159" level="INFO">args</msg>
+<msg timestamp="20210626 13:51:26.159" level="INFO">headers</msg>
+<msg timestamp="20210626 13:51:26.159" level="INFO">origin</msg>
+<msg timestamp="20210626 13:51:26.159" level="INFO">url</msg>
+<status status="PASS" starttime="20210626 13:51:26.159" endtime="20210626 13:51:26.159"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>a url é: ${RESPONSE.json()['url']}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210626 13:51:26.159" level="INFO">a url é: https://httpbin.org/get</msg>
+<status status="PASS" starttime="20210626 13:51:26.159" endtime="20210626 13:51:26.159"/>
+</kw>
+<status status="PASS" starttime="20210626 13:51:25.987" endtime="20210626 13:51:26.159"/>
+</kw>
+<status status="PASS" starttime="20210626 13:51:25.158" endtime="20210626 13:51:26.159"/>
+</test>
+<doc>Documentacao da API: https://httpbin.org/get</doc>
+<status status="PASS" starttime="20210626 13:51:24.984" endtime="20210626 13:51:26.159"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCasesAPI">TestCasesAPI</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
