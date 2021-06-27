@@ -1,13 +1,14 @@
-Requer a linguagem de programação:
+1. Requer a linguagem de programação:
  - Python 3.9.2 ou superior
 
-Automation Testing Framework:
+2. Automation Testing Framework:
  - Selenium WebDriver
 
-Webdrivers for Selenium:
+3. Webdrivers for Selenium:
  - chromedriver (Chrome) == Version 90.0.4430.72 (Official Build) (64-bit)
 
-Instructios:
+4. Instructios:
+
  1 - Instale Python;
  2 - Baixe o WebDriver para Chrome (https://github.com/lexxbr/everis);
  3 - Execute no terminal o comando: "pip install requests", "pip install robotframework-extendedrequestslibrary";

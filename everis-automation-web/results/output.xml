@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.9.2 on win32)" generated="20210626 12:31:45.424" rpa="false" schemaversion="2">
-<suite id="s1" name="Compraspagehome Tc" source="C:\AUTOMACAO\everis\everis-automation-web\tests\compraspagehome_tc.robot">
+<robot generator="Robot 4.0.3 (Python 3.9.2 on win32)" generated="20210627 01:55:05.086" rpa="false" schemaversion="2">
+<suite id="s1" name="Compraspagehome Tc" source="C:\AUTOMACAO\everis\everis\everis-automation-web\tests\compraspagehome_tc.robot">
 <test id="s1-t1" name="TC-01: LOGIN - VALIDAR DADOS DE ACESSO">
 <kw name="Abrir Navegador" library="setup" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,10 +8,10 @@
 <arg>${BROWSER}</arg>
 <arg>options=add_argument("--start-maximized")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210626 12:31:46.291" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
-<status status="PASS" starttime="20210626 12:31:46.290" endtime="20210626 12:31:52.428"/>
+<msg timestamp="20210627 01:55:09.898" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20210627 01:55:09.896" endtime="20210627 01:55:19.899"/>
 </kw>
-<status status="PASS" starttime="20210626 12:31:46.290" endtime="20210626 12:31:52.428"/>
+<status status="PASS" starttime="20210627 01:55:09.892" endtime="20210627 01:55:19.900"/>
 </kw>
 <kw name="Dado" library="BDDpt-BR">
 <arg>que esteja no site na pagina home</arg>
@@ -22,30 +22,30 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:31:52.430" endtime="20210626 12:31:52.431"/>
+<status status="PASS" starttime="20210627 01:55:19.903" endtime="20210627 01:55:19.904"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HOMEPG.cmpLogoSite}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:31:52.431" endtime="20210626 12:31:52.911"/>
+<status status="PASS" starttime="20210627 01:55:19.904" endtime="20210627 01:55:25.193"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${HOMEPG.cmpSearchHome}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210626 12:31:53.358" level="INFO">Element 'id:search_query_top' is displayed.</msg>
-<status status="PASS" starttime="20210626 12:31:52.911" endtime="20210626 12:31:53.358"/>
+<msg timestamp="20210627 01:55:25.778" level="INFO">Element 'id:search_query_top' is displayed.</msg>
+<status status="PASS" starttime="20210627 01:55:25.194" endtime="20210627 01:55:25.778"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:31:56.362" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210626 12:31:53.358" endtime="20210626 12:31:56.362"/>
+<msg timestamp="20210627 01:55:28.802" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210627 01:55:25.778" endtime="20210627 01:55:28.805"/>
 </kw>
-<status status="PASS" starttime="20210626 12:31:52.430" endtime="20210626 12:31:56.363"/>
+<status status="PASS" starttime="20210627 01:55:19.902" endtime="20210627 01:55:28.810"/>
 </kw>
-<status status="PASS" starttime="20210626 12:31:52.429" endtime="20210626 12:31:56.363"/>
+<status status="PASS" starttime="20210627 01:55:19.901" endtime="20210627 01:55:28.810"/>
 </kw>
-<status status="PASS" starttime="20210626 12:31:52.428" endtime="20210626 12:31:56.364"/>
+<status status="PASS" starttime="20210627 01:55:19.900" endtime="20210627 01:55:28.810"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>no Topo site clique no botão Sign in</arg>
@@ -56,30 +56,30 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:31:56.370" endtime="20210626 12:31:56.371"/>
+<status status="PASS" starttime="20210627 01:55:28.919" endtime="20210627 01:55:28.923"/>
 </kw>
 <kw name="Set Focus To Element" library="SeleniumLibrary">
 <arg>${HOMEPG.btnSignIn}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20210626 12:31:56.372" endtime="20210626 12:31:56.834"/>
+<status status="PASS" starttime="20210627 01:55:28.925" endtime="20210627 01:55:29.515"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${HOMEPG.btnSignIn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:31:56.837" level="INFO">Clicking element 'xpath://a[@class='login'][contains(.,'Sign in')]'.</msg>
-<status status="PASS" starttime="20210626 12:31:56.835" endtime="20210626 12:31:59.531"/>
+<msg timestamp="20210627 01:55:29.517" level="INFO">Clicking element 'xpath://a[@class='login'][contains(.,'Sign in')]'.</msg>
+<status status="PASS" starttime="20210627 01:55:29.515" endtime="20210627 01:55:32.536"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:32:02.546" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210626 12:31:59.533" endtime="20210626 12:32:02.546"/>
+<msg timestamp="20210627 01:55:35.542" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210627 01:55:32.536" endtime="20210627 01:55:35.542"/>
 </kw>
-<status status="PASS" starttime="20210626 12:31:56.369" endtime="20210626 12:32:02.547"/>
+<status status="PASS" starttime="20210627 01:55:28.918" endtime="20210627 01:55:35.543"/>
 </kw>
-<status status="PASS" starttime="20210626 12:31:56.368" endtime="20210626 12:32:02.547"/>
+<status status="PASS" starttime="20210627 01:55:28.917" endtime="20210627 01:55:35.546"/>
 </kw>
-<status status="PASS" starttime="20210626 12:31:56.366" endtime="20210626 12:32:02.548"/>
+<status status="PASS" starttime="20210627 01:55:28.915" endtime="20210627 01:55:35.546"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>no campo grid Email insira email válido</arg>
@@ -90,47 +90,47 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:32:02.552" endtime="20210626 12:32:02.552"/>
+<status status="PASS" starttime="20210627 01:55:35.615" endtime="20210627 01:55:35.618"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERS.cmpTitleAutenticação}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:02.552" endtime="20210626 12:32:02.989"/>
+<status status="PASS" starttime="20210627 01:55:35.619" endtime="20210627 01:55:36.230"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${USERS.btnSignIn}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210626 12:32:02.990" endtime="20210626 12:32:03.724"/>
+<status status="PASS" starttime="20210627 01:55:36.230" endtime="20210627 01:55:37.061"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERS.cmpEmail}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:03.724" endtime="20210626 12:32:04.145"/>
+<status status="PASS" starttime="20210627 01:55:37.061" endtime="20210627 01:55:37.605"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${USERS.cmpEmail}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:04.145" level="INFO">Clicking element 'id:email'.</msg>
-<status status="PASS" starttime="20210626 12:32:04.145" endtime="20210626 12:32:04.651"/>
+<msg timestamp="20210627 01:55:37.607" level="INFO">Clicking element 'id:email'.</msg>
+<status status="PASS" starttime="20210627 01:55:37.605" endtime="20210627 01:55:38.308"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${USERS.cmpEmail}</arg>
 <arg>${user.valido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:04.653" level="INFO">Typing text 'email@email.email' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210626 12:32:04.651" endtime="20210626 12:32:05.404"/>
+<msg timestamp="20210627 01:55:38.311" level="INFO">Typing text 'email@email.email' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210627 01:55:38.308" endtime="20210627 01:55:39.356"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:32:07.418" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:32:05.405" endtime="20210626 12:32:07.418"/>
+<msg timestamp="20210627 01:55:41.365" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:55:39.356" endtime="20210627 01:55:41.365"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:02.551" endtime="20210626 12:32:07.419"/>
+<status status="PASS" starttime="20210627 01:55:35.614" endtime="20210627 01:55:41.365"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:02.551" endtime="20210626 12:32:07.419"/>
+<status status="PASS" starttime="20210627 01:55:35.613" endtime="20210627 01:55:41.365"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:02.550" endtime="20210626 12:32:07.420"/>
+<status status="PASS" starttime="20210627 01:55:35.609" endtime="20210627 01:55:41.365"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>no campo drid senha insira senha válida</arg>
@@ -141,32 +141,32 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:32:07.427" endtime="20210626 12:32:07.429"/>
+<status status="PASS" starttime="20210627 01:55:41.378" endtime="20210627 01:55:41.379"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${USERS.cmpPassWd}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:07.434" level="INFO">Clicking element 'id:passwd'.</msg>
-<status status="PASS" starttime="20210626 12:32:07.430" endtime="20210626 12:32:07.945"/>
+<msg timestamp="20210627 01:55:41.380" level="INFO">Clicking element 'id:passwd'.</msg>
+<status status="PASS" starttime="20210627 01:55:41.379" endtime="20210627 01:55:42.055"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${USERS.cmpPassWd}</arg>
 <arg>${password.valido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:07.953" level="INFO">Typing text 'tester123' into text field 'id:passwd'.</msg>
-<status status="PASS" starttime="20210626 12:32:07.946" endtime="20210626 12:32:08.705"/>
+<msg timestamp="20210627 01:55:42.066" level="INFO">Typing text 'tester123' into text field 'id:passwd'.</msg>
+<status status="PASS" starttime="20210627 01:55:42.061" endtime="20210627 01:55:43.008"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:32:10.720" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:32:08.706" endtime="20210626 12:32:10.721"/>
+<msg timestamp="20210627 01:55:45.012" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:55:43.008" endtime="20210627 01:55:45.012"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:07.425" endtime="20210626 12:32:10.721"/>
+<status status="PASS" starttime="20210627 01:55:41.377" endtime="20210627 01:55:45.012"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:07.424" endtime="20210626 12:32:10.722"/>
+<status status="PASS" starttime="20210627 01:55:41.377" endtime="20210627 01:55:45.012"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:07.422" endtime="20210626 12:32:10.722"/>
+<status status="PASS" starttime="20210627 01:55:41.375" endtime="20210627 01:55:45.012"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>clique no botão Sign in</arg>
@@ -177,36 +177,36 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:32:10.725" endtime="20210626 12:32:10.726"/>
+<status status="PASS" starttime="20210627 01:55:45.036" endtime="20210627 01:55:45.037"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERS.btnSignIn}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:10.726" endtime="20210626 12:32:11.174"/>
+<status status="PASS" starttime="20210627 01:55:45.037" endtime="20210627 01:55:45.536"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${USERS.btnSignIn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:11.175" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20210626 12:32:11.174" endtime="20210626 12:32:13.239"/>
+<msg timestamp="20210627 01:55:45.538" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20210627 01:55:45.536" endtime="20210627 01:55:48.029"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>${USERS.MsgErroAlertLogin}</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20210626 12:32:13.501" level="INFO">Element 'xpath:(//div[contains(@class,'alert alert-danger')])[1]' did not exist.</msg>
-<status status="PASS" starttime="20210626 12:32:13.240" endtime="20210626 12:32:13.501"/>
+<msg timestamp="20210627 01:55:48.326" level="INFO">Element 'xpath:(//div[contains(@class,'alert alert-danger')])[1]' did not exist.</msg>
+<status status="PASS" starttime="20210627 01:55:48.029" endtime="20210627 01:55:48.326"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:32:15.513" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:32:13.501" endtime="20210626 12:32:15.513"/>
+<msg timestamp="20210627 01:55:50.366" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:55:48.326" endtime="20210627 01:55:50.370"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:10.725" endtime="20210626 12:32:15.513"/>
+<status status="PASS" starttime="20210627 01:55:45.036" endtime="20210627 01:55:50.371"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:10.725" endtime="20210626 12:32:15.513"/>
+<status status="PASS" starttime="20210627 01:55:45.035" endtime="20210627 01:55:50.371"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:10.724" endtime="20210626 12:32:15.513"/>
+<status status="PASS" starttime="20210627 01:55:45.026" endtime="20210627 01:55:50.372"/>
 </kw>
 <kw name="Quando" library="BDDpt-BR">
 <arg>clicado no botão Sign in não deve aparecer alerta erro login</arg>
@@ -217,25 +217,25 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:32:15.522" endtime="20210626 12:32:15.523"/>
+<status status="PASS" starttime="20210627 01:55:50.380" endtime="20210627 01:55:50.381"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>${USERS.MsgErroAlertLogin}</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20210626 12:32:15.734" level="INFO">Element 'xpath:(//div[contains(@class,'alert alert-danger')])[1]' did not exist.</msg>
-<status status="PASS" starttime="20210626 12:32:15.523" endtime="20210626 12:32:15.734"/>
+<msg timestamp="20210627 01:55:50.649" level="INFO">Element 'xpath:(//div[contains(@class,'alert alert-danger')])[1]' did not exist.</msg>
+<status status="PASS" starttime="20210627 01:55:50.382" endtime="20210627 01:55:50.649"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:32:17.748" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:32:15.734" endtime="20210626 12:32:17.748"/>
+<msg timestamp="20210627 01:55:52.658" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:55:50.650" endtime="20210627 01:55:52.658"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:15.522" endtime="20210626 12:32:17.748"/>
+<status status="PASS" starttime="20210627 01:55:50.379" endtime="20210627 01:55:52.658"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:15.519" endtime="20210626 12:32:17.748"/>
+<status status="PASS" starttime="20210627 01:55:50.376" endtime="20210627 01:55:52.659"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:15.513" endtime="20210626 12:32:17.748"/>
+<status status="PASS" starttime="20210627 01:55:50.375" endtime="20210627 01:55:52.659"/>
 </kw>
 <kw name="Então" library="BDDpt-BR">
 <arg>deverá ser exibido a tela do usuario logado</arg>
@@ -246,50 +246,50 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:32:17.758" endtime="20210626 12:32:17.758"/>
+<status status="PASS" starttime="20210627 01:55:52.712" endtime="20210627 01:55:52.713"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERS.cmpMyAccount}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:17.759" endtime="20210626 12:32:18.217"/>
+<status status="PASS" starttime="20210627 01:55:52.713" endtime="20210627 01:55:53.273"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${USERS.btnHome}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210626 12:32:18.217" endtime="20210626 12:32:18.931"/>
+<status status="PASS" starttime="20210627 01:55:53.274" endtime="20210627 01:55:54.057"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${USERS.btnHome}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:18.931" level="INFO">Clicking element 'xpath://span[contains(.,'Home')]'.</msg>
-<status status="PASS" starttime="20210626 12:32:18.931" endtime="20210626 12:32:22.301"/>
+<msg timestamp="20210627 01:55:54.060" level="INFO">Clicking element 'xpath://span[contains(.,'Home')]'.</msg>
+<status status="PASS" starttime="20210627 01:55:54.058" endtime="20210627 01:55:56.843"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HOMEPG.cmpSearchHome}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:22.302" endtime="20210626 12:32:22.760"/>
+<status status="PASS" starttime="20210627 01:55:56.845" endtime="20210627 01:55:58.717"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:32:25.768" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210626 12:32:22.761" endtime="20210626 12:32:25.769"/>
+<msg timestamp="20210627 01:56:01.731" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210627 01:55:58.717" endtime="20210627 01:56:01.731"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:17.757" endtime="20210626 12:32:25.770"/>
+<status status="PASS" starttime="20210627 01:55:52.710" endtime="20210627 01:56:01.731"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:17.755" endtime="20210626 12:32:25.770"/>
+<status status="PASS" starttime="20210627 01:55:52.710" endtime="20210627 01:56:01.731"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:17.748" endtime="20210626 12:32:25.771"/>
+<status status="PASS" starttime="20210627 01:55:52.709" endtime="20210627 01:56:01.731"/>
 </kw>
 <kw name="Fechar Navegador" library="teardown" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210626 12:32:25.774" endtime="20210626 12:32:28.131"/>
+<status status="PASS" starttime="20210627 01:56:01.769" endtime="20210627 01:56:06.677"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:25.773" endtime="20210626 12:32:28.131"/>
+<status status="PASS" starttime="20210627 01:56:01.759" endtime="20210627 01:56:06.677"/>
 </kw>
 <tag>STRESS_Tests</tag>
-<status status="PASS" starttime="20210626 12:31:46.289" endtime="20210626 12:32:28.131"/>
+<status status="PASS" starttime="20210627 01:55:09.869" endtime="20210627 01:56:06.711"/>
 </test>
 <test id="s1-t2" name="TC-02: COMPRAR - 01 ITEM | USER LOGADO | VALIDAR TOTAL COMPRA">
 <kw name="Abrir Navegador" library="setup" type="SETUP">
@@ -298,10 +298,10 @@
 <arg>${BROWSER}</arg>
 <arg>options=add_argument("--start-maximized")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210626 12:32:28.141" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
-<status status="PASS" starttime="20210626 12:32:28.139" endtime="20210626 12:32:35.889"/>
+<msg timestamp="20210627 01:56:06.781" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20210627 01:56:06.780" endtime="20210627 01:56:14.743"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:28.139" endtime="20210626 12:32:35.891"/>
+<status status="PASS" starttime="20210627 01:56:06.779" endtime="20210627 01:56:14.743"/>
 </kw>
 <kw name="Dado" library="BDDpt-BR">
 <arg>que esteja logado no site na pagina home</arg>
@@ -312,126 +312,126 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:32:35.901" endtime="20210626 12:32:35.910"/>
+<status status="PASS" starttime="20210627 01:56:14.746" endtime="20210627 01:56:14.747"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HOMEPG.cmpLogoSite}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:35.911" endtime="20210626 12:32:36.423"/>
+<status status="PASS" starttime="20210627 01:56:14.747" endtime="20210627 01:56:19.737"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${HOMEPG.cmpSearchHome}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210626 12:32:36.867" level="INFO">Element 'id:search_query_top' is displayed.</msg>
-<status status="PASS" starttime="20210626 12:32:36.423" endtime="20210626 12:32:36.867"/>
+<msg timestamp="20210627 01:56:20.214" level="INFO">Element 'id:search_query_top' is displayed.</msg>
+<status status="PASS" starttime="20210627 01:56:19.738" endtime="20210627 01:56:20.214"/>
 </kw>
 <kw name="Set Focus To Element" library="SeleniumLibrary">
 <arg>${HOMEPG.btnSignIn}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20210626 12:32:36.867" endtime="20210626 12:32:37.311"/>
+<status status="PASS" starttime="20210627 01:56:20.214" endtime="20210627 01:56:20.769"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${HOMEPG.btnSignIn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:37.313" level="INFO">Clicking element 'xpath://a[@class='login'][contains(.,'Sign in')]'.</msg>
-<status status="PASS" starttime="20210626 12:32:37.311" endtime="20210626 12:32:40.058"/>
+<msg timestamp="20210627 01:56:20.771" level="INFO">Clicking element 'xpath://a[@class='login'][contains(.,'Sign in')]'.</msg>
+<status status="PASS" starttime="20210627 01:56:20.769" endtime="20210627 01:56:22.874"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERS.cmpTitleAutenticação}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:40.058" endtime="20210626 12:32:40.486"/>
+<status status="PASS" starttime="20210627 01:56:22.875" endtime="20210627 01:56:24.160"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${USERS.btnSignIn}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210626 12:32:40.486" endtime="20210626 12:32:41.168"/>
+<status status="PASS" starttime="20210627 01:56:24.161" endtime="20210627 01:56:24.971"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERS.cmpEmail}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:41.168" endtime="20210626 12:32:41.574"/>
+<status status="PASS" starttime="20210627 01:56:24.971" endtime="20210627 01:56:25.511"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${USERS.cmpEmail}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:41.574" level="INFO">Clicking element 'id:email'.</msg>
-<status status="PASS" starttime="20210626 12:32:41.574" endtime="20210626 12:32:42.050"/>
+<msg timestamp="20210627 01:56:25.512" level="INFO">Clicking element 'id:email'.</msg>
+<status status="PASS" starttime="20210627 01:56:25.511" endtime="20210627 01:56:26.219"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${USERS.cmpEmail}</arg>
 <arg>${user.valido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:42.051" level="INFO">Typing text 'email@email.email' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210626 12:32:42.050" endtime="20210626 12:32:42.783"/>
+<msg timestamp="20210627 01:56:26.223" level="INFO">Typing text 'email@email.email' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210627 01:56:26.219" endtime="20210627 01:56:27.344"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${USERS.cmpPassWd}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:42.783" level="INFO">Clicking element 'id:passwd'.</msg>
-<status status="PASS" starttime="20210626 12:32:42.783" endtime="20210626 12:32:43.286"/>
+<msg timestamp="20210627 01:56:27.346" level="INFO">Clicking element 'id:passwd'.</msg>
+<status status="PASS" starttime="20210627 01:56:27.344" endtime="20210627 01:56:28.077"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${USERS.cmpPassWd}</arg>
 <arg>${password.valido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:43.288" level="INFO">Typing text 'tester123' into text field 'id:passwd'.</msg>
-<status status="PASS" starttime="20210626 12:32:43.286" endtime="20210626 12:32:43.997"/>
+<msg timestamp="20210627 01:56:28.079" level="INFO">Typing text 'tester123' into text field 'id:passwd'.</msg>
+<status status="PASS" starttime="20210627 01:56:28.077" endtime="20210627 01:56:29.136"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:32:46.006" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:32:43.997" endtime="20210626 12:32:46.006"/>
+<msg timestamp="20210627 01:56:31.142" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:56:29.136" endtime="20210627 01:56:31.142"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERS.btnSignIn}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:46.006" endtime="20210626 12:32:46.435"/>
+<status status="PASS" starttime="20210627 01:56:31.143" endtime="20210627 01:56:31.656"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${USERS.btnSignIn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:46.441" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
-<status status="PASS" starttime="20210626 12:32:46.436" endtime="20210626 12:32:49.602"/>
+<msg timestamp="20210627 01:56:31.658" level="INFO">Clicking element 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20210627 01:56:31.656" endtime="20210627 01:56:35.143"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>${USERS.MsgErroAlertLogin}</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20210626 12:32:49.851" level="INFO">Element 'xpath:(//div[contains(@class,'alert alert-danger')])[1]' did not exist.</msg>
-<status status="PASS" starttime="20210626 12:32:49.603" endtime="20210626 12:32:49.851"/>
+<msg timestamp="20210627 01:56:35.414" level="INFO">Element 'xpath:(//div[contains(@class,'alert alert-danger')])[1]' did not exist.</msg>
+<status status="PASS" starttime="20210627 01:56:35.143" endtime="20210627 01:56:35.414"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:32:51.863" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:32:49.851" endtime="20210626 12:32:51.863"/>
+<msg timestamp="20210627 01:56:37.447" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:56:35.415" endtime="20210627 01:56:37.447"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERS.cmpMyAccount}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:51.863" endtime="20210626 12:32:52.284"/>
+<status status="PASS" starttime="20210627 01:56:37.447" endtime="20210627 01:56:37.985"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${USERS.btnHome}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210626 12:32:52.284" endtime="20210626 12:32:53.011"/>
+<status status="PASS" starttime="20210627 01:56:37.985" endtime="20210627 01:56:38.851"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${USERS.btnHome}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:53.011" level="INFO">Clicking element 'xpath://span[contains(.,'Home')]'.</msg>
-<status status="PASS" starttime="20210626 12:32:53.011" endtime="20210626 12:32:55.616"/>
+<msg timestamp="20210627 01:56:38.856" level="INFO">Clicking element 'xpath://span[contains(.,'Home')]'.</msg>
+<status status="PASS" starttime="20210627 01:56:38.852" endtime="20210627 01:56:42.257"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HOMEPG.cmpSearchHome}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:32:55.617" endtime="20210626 12:32:56.099"/>
+<status status="PASS" starttime="20210627 01:56:42.257" endtime="20210627 01:56:47.065"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:35.898" endtime="20210626 12:32:56.100"/>
+<status status="PASS" starttime="20210627 01:56:14.745" endtime="20210627 01:56:47.065"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:35.896" endtime="20210626 12:32:56.100"/>
+<status status="PASS" starttime="20210627 01:56:14.745" endtime="20210627 01:56:47.065"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:35.893" endtime="20210626 12:32:56.101"/>
+<status status="PASS" starttime="20210627 01:56:14.744" endtime="20210627 01:56:47.066"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>navegue até campo Popular</arg>
@@ -442,24 +442,24 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.3 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:32:56.111" endtime="20210626 12:32:56.113"/>
+<status status="PASS" starttime="20210627 01:56:47.135" endtime="20210627 01:56:47.138"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${HOMEPG.cmpProdDisp01}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210626 12:32:56.114" endtime="20210626 12:32:57.060"/>
+<status status="PASS" starttime="20210627 01:56:47.141" endtime="20210627 01:56:48.199"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:32:59.075" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:32:57.060" endtime="20210626 12:32:59.075"/>
+<msg timestamp="20210627 01:56:50.206" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:56:48.199" endtime="20210627 01:56:50.206"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:56.108" endtime="20210626 12:32:59.075"/>
+<status status="PASS" starttime="20210627 01:56:47.130" endtime="20210627 01:56:50.208"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:56.105" endtime="20210626 12:32:59.075"/>
+<status status="PASS" starttime="20210627 01:56:47.129" endtime="20210627 01:56:50.209"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:56.103" endtime="20210626 12:32:59.075"/>
+<status status="PASS" starttime="20210627 01:56:47.128" endtime="20210627 01:56:50.209"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>escolha algum item disponivel clique no botão Add to cart</arg>
@@ -470,31 +470,31 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.3 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:32:59.086" endtime="20210626 12:32:59.088"/>
+<status status="PASS" starttime="20210627 01:56:50.242" endtime="20210627 01:56:50.242"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${HOMEPG.cmpProdDisp01}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:59.098" level="INFO">Clicking element 'xpath://*[@id="homefeatured"]/li[2]'.</msg>
-<status status="PASS" starttime="20210626 12:32:59.089" endtime="20210626 12:32:59.774"/>
+<msg timestamp="20210627 01:56:50.245" level="INFO">Clicking element 'xpath://*[@id="homefeatured"]/li[2]'.</msg>
+<status status="PASS" starttime="20210627 01:56:50.243" endtime="20210627 01:56:51.046"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${MYCAR.btnAddtoCar2}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:32:59.774" level="INFO">Clicking element '//*[@id="homefeatured"]/li[2]/div/div[2]/div[2]/a[1]'.</msg>
-<status status="PASS" starttime="20210626 12:32:59.774" endtime="20210626 12:33:00.489"/>
+<msg timestamp="20210627 01:56:51.048" level="INFO">Clicking element '//*[@id="homefeatured"]/li[2]/div/div[2]/div[2]/a[1]'.</msg>
+<status status="PASS" starttime="20210627 01:56:51.046" endtime="20210627 01:56:51.975"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:02.490" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:00.489" endtime="20210626 12:33:02.490"/>
+<msg timestamp="20210627 01:56:53.996" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:56:51.975" endtime="20210627 01:56:53.996"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:59.083" endtime="20210626 12:33:02.490"/>
+<status status="PASS" starttime="20210627 01:56:50.239" endtime="20210627 01:56:53.997"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:59.075" endtime="20210626 12:33:02.490"/>
+<status status="PASS" starttime="20210627 01:56:50.237" endtime="20210627 01:56:53.997"/>
 </kw>
-<status status="PASS" starttime="20210626 12:32:59.075" endtime="20210626 12:33:02.490"/>
+<status status="PASS" starttime="20210627 01:56:50.235" endtime="20210627 01:56:53.997"/>
 </kw>
 <kw name="Quando" library="BDDpt-BR">
 <arg>na tela resumo compra valide campo Total products</arg>
@@ -505,7 +505,7 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.6 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:33:02.496" endtime="20210626 12:33:02.496"/>
+<status status="PASS" starttime="20210627 01:56:54.063" endtime="20210627 01:56:54.066"/>
 </kw>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${your_shopping_cart}</var>
@@ -515,57 +515,57 @@
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${MYCAR.cmpTitlePrdSucess}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210626 12:33:03.749" level="INFO">Element 'xpath://h2[contains(.,'Product successfully added to your shopping cart')]' is displayed.</msg>
-<status status="PASS" starttime="20210626 12:33:02.498" endtime="20210626 12:33:03.749"/>
+<msg timestamp="20210627 01:56:55.410" level="INFO">Element 'xpath://h2[contains(.,'Product successfully added to your shopping cart')]' is displayed.</msg>
+<status status="PASS" starttime="20210627 01:56:54.067" endtime="20210627 01:56:55.410"/>
 </kw>
-<msg timestamp="20210626 12:33:03.749" level="INFO">${your_shopping_cart} = True</msg>
-<status status="PASS" starttime="20210626 12:33:02.497" endtime="20210626 12:33:03.749"/>
+<msg timestamp="20210627 01:56:55.411" level="INFO">${your_shopping_cart} = True</msg>
+<status status="PASS" starttime="20210627 01:56:54.066" endtime="20210627 01:56:55.411"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;${your_shopping_cart}&quot; == &quot;True&quot;">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${MYCAR.cmpTitlePrdSucess}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:33:03.749" level="INFO">Clicking element 'xpath://h2[contains(.,'Product successfully added to your shopping cart')]'.</msg>
-<status status="PASS" starttime="20210626 12:33:03.749" endtime="20210626 12:33:05.017"/>
+<msg timestamp="20210627 01:56:55.414" level="INFO">Clicking element 'xpath://h2[contains(.,'Product successfully added to your shopping cart')]'.</msg>
+<status status="PASS" starttime="20210627 01:56:55.412" endtime="20210627 01:56:56.848"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:03.749" endtime="20210626 12:33:05.017"/>
+<status status="PASS" starttime="20210627 01:56:55.411" endtime="20210627 01:56:56.848"/>
 </branch>
-<status status="PASS" starttime="20210626 12:33:03.749" endtime="20210626 12:33:05.017"/>
+<status status="PASS" starttime="20210627 01:56:55.411" endtime="20210627 01:56:56.848"/>
 </if>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${MYCAR.cmpYourCartTotal}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:33:05.017" endtime="20210626 12:33:06.265"/>
+<status status="PASS" starttime="20210627 01:56:56.848" endtime="20210627 01:56:58.206"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:08.267" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:06.265" endtime="20210626 12:33:08.267"/>
+<msg timestamp="20210627 01:57:00.227" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:56:58.206" endtime="20210627 01:57:00.227"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${MYCAR.btnProcCheckOut}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:33:08.267" endtime="20210626 12:33:09.536"/>
+<status status="PASS" starttime="20210627 01:57:00.228" endtime="20210627 01:57:01.586"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${MYCAR.cmpTotalProd}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210626 12:33:10.769" level="INFO">Element 'xpath://div[1]/div[2]/div[1]/span[text()='$27.00']' is displayed.</msg>
-<status status="PASS" starttime="20210626 12:33:09.536" endtime="20210626 12:33:10.769"/>
+<msg timestamp="20210627 01:57:02.926" level="INFO">Element 'xpath://div[1]/div[2]/div[1]/span[text()='$27.00']' is displayed.</msg>
+<status status="PASS" starttime="20210627 01:57:01.586" endtime="20210627 01:57:02.926"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:12.772" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:10.770" endtime="20210626 12:33:12.772"/>
+<msg timestamp="20210627 01:57:04.928" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:57:02.927" endtime="20210627 01:57:04.928"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:02.496" endtime="20210626 12:33:12.772"/>
+<status status="PASS" starttime="20210627 01:56:54.062" endtime="20210627 01:57:04.928"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:02.496" endtime="20210626 12:33:12.772"/>
+<status status="PASS" starttime="20210627 01:56:54.059" endtime="20210627 01:57:04.928"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:02.490" endtime="20210626 12:33:12.772"/>
+<status status="PASS" starttime="20210627 01:56:54.058" endtime="20210627 01:57:04.934"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>clique no botão Proceed to checkout</arg>
@@ -576,25 +576,25 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.3 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:33:12.778" endtime="20210626 12:33:12.778"/>
+<status status="PASS" starttime="20210627 01:57:04.995" endtime="20210627 01:57:04.996"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${MYCAR.btnProcCheckOut}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:33:12.779" level="INFO">Clicking element 'xpath://a[@class='btn btn-default button button-medium'][contains(.,'Proceed to checkout')]'.</msg>
-<status status="PASS" starttime="20210626 12:33:12.778" endtime="20210626 12:33:15.345"/>
+<msg timestamp="20210627 01:57:04.998" level="INFO">Clicking element 'xpath://a[@class='btn btn-default button button-medium'][contains(.,'Proceed to checkout')]'.</msg>
+<status status="PASS" starttime="20210627 01:57:04.996" endtime="20210627 01:57:07.727"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:17.354" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:15.346" endtime="20210626 12:33:17.354"/>
+<msg timestamp="20210627 01:57:09.737" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:57:07.727" endtime="20210627 01:57:09.738"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:12.778" endtime="20210626 12:33:17.354"/>
+<status status="PASS" starttime="20210627 01:57:04.991" endtime="20210627 01:57:09.738"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:12.772" endtime="20210626 12:33:17.354"/>
+<status status="PASS" starttime="20210627 01:57:04.990" endtime="20210627 01:57:09.738"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:12.772" endtime="20210626 12:33:17.354"/>
+<status status="PASS" starttime="20210627 01:57:04.988" endtime="20210627 01:57:09.738"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>tela SHOPPING-CART SUMMARY será exibida com sucesso</arg>
@@ -605,29 +605,29 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:33:17.359" endtime="20210626 12:33:17.359"/>
+<status status="PASS" starttime="20210627 01:57:09.852" endtime="20210627 01:57:09.852"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${MYCAR.cmpTitleMeuCarrinho}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:33:17.360" endtime="20210626 12:33:17.798"/>
+<status status="PASS" starttime="20210627 01:57:09.852" endtime="20210627 01:57:10.476"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${MYCAR.btnProcCheckOut2}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210626 12:33:17.798" endtime="20210626 12:33:18.528"/>
+<status status="PASS" starttime="20210627 01:57:10.476" endtime="20210627 01:57:11.421"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:21.540" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:18.528" endtime="20210626 12:33:21.540"/>
+<msg timestamp="20210627 01:57:14.425" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210627 01:57:11.421" endtime="20210627 01:57:14.425"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:17.359" endtime="20210626 12:33:21.540"/>
+<status status="PASS" starttime="20210627 01:57:09.851" endtime="20210627 01:57:14.425"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:17.359" endtime="20210626 12:33:21.540"/>
+<status status="PASS" starttime="20210627 01:57:09.850" endtime="20210627 01:57:14.425"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:17.354" endtime="20210626 12:33:21.540"/>
+<status status="PASS" starttime="20210627 01:57:09.849" endtime="20210627 01:57:14.425"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>verifique valor campo Unit price é mesmo valor Total products</arg>
@@ -638,24 +638,24 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:33:21.551" endtime="20210626 12:33:21.552"/>
+<status status="PASS" starttime="20210627 01:57:14.432" endtime="20210627 01:57:14.433"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${MYCAR.cmpUnitPrice}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:33:21.552" endtime="20210626 12:33:22.012"/>
+<status status="PASS" starttime="20210627 01:57:14.434" endtime="20210627 01:57:14.950"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:25.013" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:22.012" endtime="20210626 12:33:25.013"/>
+<msg timestamp="20210627 01:57:17.963" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210627 01:57:14.950" endtime="20210627 01:57:17.964"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:21.549" endtime="20210626 12:33:25.013"/>
+<status status="PASS" starttime="20210627 01:57:14.432" endtime="20210627 01:57:17.965"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:21.547" endtime="20210626 12:33:25.013"/>
+<status status="PASS" starttime="20210627 01:57:14.431" endtime="20210627 01:57:17.966"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:21.540" endtime="20210626 12:33:25.013"/>
+<status status="PASS" starttime="20210627 01:57:14.431" endtime="20210627 01:57:17.966"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>com valores validados clique no botão Proceed to checkout</arg>
@@ -666,25 +666,25 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:33:25.019" endtime="20210626 12:33:25.020"/>
+<status status="PASS" starttime="20210627 01:57:17.988" endtime="20210627 01:57:17.989"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${MYCAR.btnProcCheckOut3}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:33:25.020" level="INFO">Clicking element 'xpath://*[@id="center_column"]/p[2]/a[1]'.</msg>
-<status status="PASS" starttime="20210626 12:33:25.020" endtime="20210626 12:33:26.838"/>
+<msg timestamp="20210627 01:57:18.013" level="INFO">Clicking element 'xpath://*[@id="center_column"]/p[2]/a[1]'.</msg>
+<status status="PASS" starttime="20210627 01:57:17.990" endtime="20210627 01:57:20.509"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:29.843" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:26.839" endtime="20210626 12:33:29.843"/>
+<msg timestamp="20210627 01:57:23.512" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210627 01:57:20.510" endtime="20210627 01:57:23.512"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:25.019" endtime="20210626 12:33:29.843"/>
+<status status="PASS" starttime="20210627 01:57:17.987" endtime="20210627 01:57:23.516"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:25.019" endtime="20210626 12:33:29.843"/>
+<status status="PASS" starttime="20210627 01:57:17.986" endtime="20210627 01:57:23.516"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:25.013" endtime="20210626 12:33:29.843"/>
+<status status="PASS" starttime="20210627 01:57:17.981" endtime="20210627 01:57:23.516"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>na tela ADDRESSES clique no botão Proceed to checkout</arg>
@@ -695,35 +695,35 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:33:29.853" endtime="20210626 12:33:29.853"/>
+<status status="PASS" starttime="20210627 01:57:23.545" endtime="20210627 01:57:23.548"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${MYADDRESSES.cmpTitle}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:33:29.853" endtime="20210626 12:33:30.315"/>
+<status status="PASS" starttime="20210627 01:57:23.548" endtime="20210627 01:57:24.031"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${MYADDRESSES.btnProcCheckOut}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210626 12:33:30.315" endtime="20210626 12:33:31.028"/>
+<status status="PASS" starttime="20210627 01:57:24.031" endtime="20210627 01:57:24.900"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${MYADDRESSES.btnProcCheckOut}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:33:31.028" level="INFO">Clicking element 'xpath://*[@id="center_column"]/form/p/button/span'.</msg>
-<status status="PASS" starttime="20210626 12:33:31.028" endtime="20210626 12:33:33.286"/>
+<msg timestamp="20210627 01:57:24.904" level="INFO">Clicking element 'xpath://*[@id="center_column"]/form/p/button/span'.</msg>
+<status status="PASS" starttime="20210627 01:57:24.902" endtime="20210627 01:57:28.096"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:36.294" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:33.287" endtime="20210626 12:33:36.294"/>
+<msg timestamp="20210627 01:57:31.123" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210627 01:57:28.096" endtime="20210627 01:57:31.123"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:29.852" endtime="20210626 12:33:36.294"/>
+<status status="PASS" starttime="20210627 01:57:23.544" endtime="20210627 01:57:31.123"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:29.851" endtime="20210626 12:33:36.294"/>
+<status status="PASS" starttime="20210627 01:57:23.542" endtime="20210627 01:57:31.123"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:29.843" endtime="20210626 12:33:36.294"/>
+<status status="PASS" starttime="20210627 01:57:23.541" endtime="20210627 01:57:31.123"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>na tela SHIPPING aceite o Terms of service</arg>
@@ -734,35 +734,35 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:33:36.300" endtime="20210626 12:33:36.301"/>
+<status status="PASS" starttime="20210627 01:57:31.163" endtime="20210627 01:57:31.163"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${MYADDRESSES.cmpTitleShip}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:33:36.301" endtime="20210626 12:33:36.763"/>
+<status status="PASS" starttime="20210627 01:57:31.164" endtime="20210627 01:57:31.631"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${MYADDRESSES.btnProcCheckOut2}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210626 12:33:36.763" endtime="20210626 12:33:37.478"/>
+<status status="PASS" starttime="20210627 01:57:31.631" endtime="20210627 01:57:32.526"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${MYADDRESSES.cmpService}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:33:37.478" level="INFO">Clicking element 'id:uniform-cgv'.</msg>
-<status status="PASS" starttime="20210626 12:33:37.478" endtime="20210626 12:33:37.995"/>
+<msg timestamp="20210627 01:57:32.526" level="INFO">Clicking element 'id:uniform-cgv'.</msg>
+<status status="PASS" starttime="20210627 01:57:32.526" endtime="20210627 01:57:33.062"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:39.996" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:37.995" endtime="20210626 12:33:39.996"/>
+<msg timestamp="20210627 01:57:35.081" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:57:33.062" endtime="20210627 01:57:35.081"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:36.300" endtime="20210626 12:33:39.996"/>
+<status status="PASS" starttime="20210627 01:57:31.162" endtime="20210627 01:57:35.081"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:36.300" endtime="20210626 12:33:39.996"/>
+<status status="PASS" starttime="20210627 01:57:31.161" endtime="20210627 01:57:35.081"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:36.294" endtime="20210626 12:33:39.996"/>
+<status status="PASS" starttime="20210627 01:57:31.160" endtime="20210627 01:57:35.081"/>
 </kw>
 <kw name="E" library="BDDpt-BR">
 <arg>clique no botão Proceed to checkout2</arg>
@@ -773,25 +773,25 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:33:40.005" endtime="20210626 12:33:40.005"/>
+<status status="PASS" starttime="20210627 01:57:35.089" endtime="20210627 01:57:35.090"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${MYADDRESSES.btnProcCheckOut2}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210626 12:33:40.006" level="INFO">Clicking element 'xpath://*[@id="form"]/p/button'.</msg>
-<status status="PASS" starttime="20210626 12:33:40.005" endtime="20210626 12:33:42.573"/>
+<msg timestamp="20210627 01:57:35.093" level="INFO">Clicking element 'xpath://*[@id="form"]/p/button'.</msg>
+<status status="PASS" starttime="20210627 01:57:35.091" endtime="20210627 01:57:37.204"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:44.576" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:42.573" endtime="20210626 12:33:44.576"/>
+<msg timestamp="20210627 01:57:39.221" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210627 01:57:37.205" endtime="20210627 01:57:39.221"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:40.005" endtime="20210626 12:33:44.576"/>
+<status status="PASS" starttime="20210627 01:57:35.088" endtime="20210627 01:57:39.221"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:40.003" endtime="20210626 12:33:44.576"/>
+<status status="PASS" starttime="20210627 01:57:35.087" endtime="20210627 01:57:39.221"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:39.996" endtime="20210626 12:33:44.576"/>
+<status status="PASS" starttime="20210627 01:57:35.085" endtime="20210627 01:57:39.221"/>
 </kw>
 <kw name="Então" library="BDDpt-BR">
 <arg>será exibido a tela PLEASE CHOOSE YOUR PAYMENT METHOD</arg>
@@ -802,48 +802,48 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210626 12:33:44.588" endtime="20210626 12:33:44.589"/>
+<status status="PASS" starttime="20210627 01:57:39.226" endtime="20210627 01:57:39.226"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${MYADDRESSES.cmpTitlePgto}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210626 12:33:44.589" endtime="20210626 12:33:45.046"/>
+<status status="PASS" starttime="20210627 01:57:39.227" endtime="20210627 01:57:39.681"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${MYADDRESSES.lnkShopping}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210626 12:33:45.046" endtime="20210626 12:33:45.776"/>
+<status status="PASS" starttime="20210627 01:57:39.681" endtime="20210627 01:57:40.431"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${MYADDRESSES.cmpTotalProd}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210626 12:33:46.237" level="INFO">Element 'xpath://*[@id="total_product"][text()="$27.00"]' is displayed.</msg>
-<status status="PASS" starttime="20210626 12:33:45.776" endtime="20210626 12:33:46.237"/>
+<msg timestamp="20210627 01:57:40.881" level="INFO">Element 'xpath://*[@id="total_product"][text()="$27.00"]' is displayed.</msg>
+<status status="PASS" starttime="20210627 01:57:40.431" endtime="20210627 01:57:40.881"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210626 12:33:49.247" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210626 12:33:46.237" endtime="20210626 12:33:49.247"/>
+<msg timestamp="20210627 01:57:43.901" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210627 01:57:40.881" endtime="20210627 01:57:43.901"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:44.586" endtime="20210626 12:33:49.247"/>
+<status status="PASS" starttime="20210627 01:57:39.225" endtime="20210627 01:57:43.906"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:44.584" endtime="20210626 12:33:49.247"/>
+<status status="PASS" starttime="20210627 01:57:39.225" endtime="20210627 01:57:43.906"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:44.576" endtime="20210626 12:33:49.247"/>
+<status status="PASS" starttime="20210627 01:57:39.221" endtime="20210627 01:57:43.906"/>
 </kw>
 <kw name="Fechar Navegador" library="teardown" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210626 12:33:49.251" endtime="20210626 12:33:51.580"/>
+<status status="PASS" starttime="20210627 01:57:43.914" endtime="20210627 01:57:46.281"/>
 </kw>
-<status status="PASS" starttime="20210626 12:33:49.247" endtime="20210626 12:33:51.580"/>
+<status status="PASS" starttime="20210627 01:57:43.911" endtime="20210627 01:57:46.281"/>
 </kw>
 <tag>SMOKE_Tests</tag>
-<status status="PASS" starttime="20210626 12:32:28.138" endtime="20210626 12:33:51.580"/>
+<status status="PASS" starttime="20210627 01:56:06.767" endtime="20210627 01:57:46.287"/>
 </test>
 <doc>Funcionalidade: Compras PG Home</doc>
-<status status="PASS" starttime="20210626 12:31:45.426" endtime="20210626 12:33:51.586"/>
+<status status="PASS" starttime="20210627 01:55:05.092" endtime="20210627 01:57:46.293"/>
 </suite>
 <statistics>
 <total>
@@ -858,6 +858,5 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210626 12:31:45.754" level="ERROR">Error in file 'C:\AUTOMACAO\everis\everis-automation-web\resource\main.resource' on line 14: Resource file '..\objects\login_st.resource' does not exist.</msg>
 </errors>
 </robot>

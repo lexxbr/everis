@@ -17,15 +17,11 @@ Conecta na API
 Requisitar campo url da api
     ${RESPONSE}  Get On Session  alias=httpbin  url=/get
     Log     ${RESPONSE.text}
-
     Log Many  @{RESPONSE.json()}
-
     Log   a url é: ${RESPONSE.json()['url']}
 
 Conferir se retorna no campo url é "${RESPONSE.json()['url']}"
     ${RESPONSE}  Get On Session  alias=httpbin  url=/get
     Log     ${RESPONSE.text}
-
     Log Many  @{RESPONSE.json()}
-
     Log   a url é: ${RESPONSE.json()['url']}
